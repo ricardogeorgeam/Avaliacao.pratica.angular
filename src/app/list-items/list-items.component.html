@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Listas de tarefas</h1>
-    
+    <input [maxLength]="100" type="text" placeholder="input" [(ngModel)]="valor" (keyup.enter)="add()">
 <ul class="list-group">
     <li *ngFor="let list of list; index as i">
         <p [ngStyle]="{'background-color': this.marked.indexOf(i) !=-1 ? 'yellow': 'white'}">{{ list }}</p>
@@ -8,5 +8,5 @@
         <button mat-button color="primary" type="button" (click)="done(i)">check ✅</button>
     </li>
 </ul>
-<input [maxLength]="100" type="text" placeholder="input" [(ngModel)]="valor" (keyup.enter)="add()">
+
 </div>

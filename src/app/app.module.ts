@@ -10,6 +10,8 @@ import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
 import { ControleAcessoComponent } from './controle-acesso/controle-acesso.component';
 import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
+import { AreaLogadaComponent } from './area-logada/area-logada.component';
+import { FormLoginComponent } from './form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ComponenteFilhoComponent } from './componente-filho/componente-filho.co
     FormCadastroComponent,
     ControleAcessoComponent,
     ComponentePaiComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    AreaLogadaComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,

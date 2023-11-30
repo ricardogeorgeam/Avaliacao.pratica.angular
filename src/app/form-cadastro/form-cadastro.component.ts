@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-form-login',
+  selector: 'app-form-cadastro',
   template: `
     <div>
       <h2>Formulário de Cadastro</h2>
@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
       <label for="senha">Senha:</label>
       <input type="password" id="senha" [(ngModel)]="senha" />
       <div [ngStyle]="{'background-color': this.mensagem != 'Olá, informe os campos corretamente.' ? '#66FF99': '#FFCCCB'}" >{{mensagem}}</div>
-
+      
       <button (click)="validaCadastro()">Fazer Cadastro</button>
     </div>
   `,
